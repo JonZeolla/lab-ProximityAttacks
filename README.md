@@ -1,13 +1,13 @@
-# 2016-08-11 Steel City Information Security Lab
-http://www.meetup.com/Steel-City-InfoSec/events/227075388/
+# Proximity Attacks Lab
 
 ## How to clone this branch
-* `git clone -b ProximityAttacks --single-branch --recursive https://github.com/JonZeolla/lab`
-  * Clone the latest revision of the ProximityAttacks branch, and automatically bring in the related submodules.
-* `git clone -b 2016-08-11_SCIS_ProximityAttacks --single-branch --recursive https://github.com/JonZeolla/lab`
-  * Clone the revision of the ProximityAttacks branch used during the 2016-08-11 Steel City InfoSec lab.  Cloning any of the pointers (tags) will put you in a detached HEAD state, which is expected.
+* `git clone --recursive https://github.com/JonZeolla/lab-ProximityAttacks`
+  * Clone the latest revision of the lab-ProximityAttacks repo and automatically bring in the related submodules.
 
-This assumes that you have git installed on either your Linux or Windows box (instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)) and that you have cloned it to your Desktop.  
+## Related Events
+**2016-08-11 Steel City Information Security Lab**
+
+http://www.meetup.com/Steel-City-InfoSec/events/227075388/
 
 ## How to setup the lab
 ### Configure the lab manually  
@@ -27,7 +27,7 @@ A VM will be provided for the lab (TODO).  Only **VMWare hypervisors** have been
 ### Configure a new VM for distribution
 Note:  This setup will only handle the RFID stations.  Because of Windows licensing and the fact that my MSR605 only works on Windows, I am unable to distribute that as a VM.  
 
-1. Install Kali 2016.1 in a VM[1]
+1. Install Kali 2016.1 in a VM
 2. Login as root, then open a terminal
 3. (optional) Take a snapshot
 4. Run the following commands:
@@ -119,6 +119,10 @@ There is no current way to update this branch on a Windows machine.
 * https://www.youtube.com/watch?v=seKas8KFcSI
 * http://proxclone.com/
 
-
-[1]:  I typically make sure to create VMs as harware version 10 under Compatibility because I've found it fixes some issues with transferring VMs between VMware Fusion and ESXi 5.5.
+## Contributing
+1. [Fork the repository](https://github.com/jonzeolla/lab-ProximityAttacks/fork)
+1. Create a feature branch via `git checkout -b feature/description`
+1. Make your changes
+1. Commit your changes via `git commit -am 'Summarize the changes here'`
+1. Create a new pull request ([how-to](https://help.github.com/articles/creating-a-pull-request/))
 
